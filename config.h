@@ -1,9 +1,7 @@
-/******** Adafruit IO Config ***********/
-
 // visit io.adafruit.com if you need to create an account,
 // or if you need your Adafruit IO key.
 #define IO_USERNAME "juliomena1806"
-#define IO_KEY "aio_ImvS89qBIG8yPvmuV4iG0XMCJmbJ"
+#define IO_KEY "aio_mgoc48KZGqnOuQvwZSFPBp6mKIkv"
 
 /*********** WIFI **************/
 
@@ -18,21 +16,19 @@
 //   https://www.adafruit.com/product/4000
 //   - Adafruit AirLift Breakout -> https://www.adafruit.com/product/4201
 //   - Adafruit AirLift Shield -> https://www.adafruit.com/product/4285
-//   - Adafruit AirLift FeatherWing - > https://www.adafruit.com/product/4264
-//#define WIFI_SSID "K40_0457"
-//#define WIFI_PASS "miguelito"
-//#define WIFI_SSID "Ada1"
-//#define WIFI_PASS "12345678"
-//#define WIFI_SSID "Alumnos_TIC"
-//#define WIFI_PASS "qwerty13579"
-#define WIFI_SSID "Motog6"
-#define WIFI_PASS "12345678"
+//   - Adafruit AirLift FeatherWing -> https://www.adafruit.com/product/4264
+
+#define WIFI_SSID "redlocal_2.4G_Normal"
+#define WIFI_PASS "Mena180602"
 
 // uncomment the following line if you are using airlift
 // #define USE_AIRLIFT
 
 // uncomment the following line if you are using winc1500
 // #define USE_WINC1500
+
+// uncomment the following line if you are using mrk1010 or nano 33 iot
+//#define ARDUINO_SAMD_MKR1010
 
 // comment out the following lines if you are using fona or ethernet
 #include "AdafruitIO_WiFi.h"
@@ -51,7 +47,6 @@
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
                    NINA_ACK, NINA_RESETN, NINA_GPIO0, &SPIWIFI);
 #else
-AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 #endif
 /*********** FONA **************/
 

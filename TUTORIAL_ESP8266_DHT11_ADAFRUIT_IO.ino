@@ -8,16 +8,16 @@
 
 #define DHTPIN D4
 const int PIR = D7;//movimiento
-const int alarma=D5;//una madre que hace ruido
+const int alarma=D8;//una madre que hace ruido
 const int Trigger = D5;   //Pin digital 2 para el Trigger del sensor
 const int Echo = D6;   //Pin digital 3 para el Echo del sensor
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-AdafruitIO_Feed *temperatura = io.feed("Temperatura1");
-AdafruitIO_Feed *humedad = io.feed("Humendad");
-AdafruitIO_Feed *movimiento = io.feed("Movimiento");
-AdafruitIO_Feed *distancia = io.feed("Ultrasonico1");
+AdafruitIO_Feed *temperatura = io.feed("temperatura");
+AdafruitIO_Feed *humedad = io.feed("humedad");
+AdafruitIO_Feed *movimiento = io.feed("movimiento");
+AdafruitIO_Feed *distancia = io.feed("distancia");
 
 void setup() {
   pinMode(PIR,INPUT);
